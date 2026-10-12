@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roiza Claire Lim | IT Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="navbar">
+  <a class="logo" href="#home">RCL<span>.</span></a>
+  <button class="menu-toggle" id="menuToggle">☰</button>
+  <nav id="navLinks">
+    <a href="#home">Home</a><a href="#about">About Me</a><a href="#skills">Skills</a>
+    <a href="#projects">Projects</a><a href="#education">Education</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div>
+    <p class="eyebrow">INFORMATION TECHNOLOGY STUDENT</p>
+    <h1>Hi, I'm <span>Roiza Claire Lim.</span></h1>
+    <p class="hero-text">A 3rd-year Information Technology student who enjoys building practical websites, systems, and user-friendly digital experiences.</p>
+    <div class="buttons"><a href="#projects" class="btn primary">View My Projects</a><a href="#contact" class="btn secondary">Contact Me</a></div>
+  </div>
+  <div class="hero-card">
+    <div class="avatar">RC</div>
+    <p>Currently studying</p><h3>Information Technology</h3>
+    <span>National College of Science and Technology</span>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="heading"><p class="eyebrow">ABOUT ME</p><h2>A little about me</h2></div>
+  <div class="about-grid">
+    <div><h3>Learning, building, and improving.</h3>
+      <p>I'm <strong>Roiza Claire Lim</strong>, currently a 3rd-year Information Technology student at <strong>National College of Science and Technology</strong>.</p>
+      <p>I am interested in web development, database-driven systems, and creating applications that are practical and easy to use. Through school projects, I continue to improve my programming, system development, and UI/UX skills.</p>
+    </div>
+    <div class="facts">
+      <div><b>01</b><strong>Web Development</strong><small>Building responsive websites and web systems.</small></div>
+      <div><b>02</b><strong>System Development</strong><small>Creating practical applications for real-world workflows.</small></div>
+      <div><b>03</b><strong>Continuous Learning</strong><small>Exploring new technologies and improving through projects.</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="section light" id="skills">
+  <div class="heading center"><p class="eyebrow">SKILLS</p><h2>Technologies I work with</h2><p>Tools and areas I have worked with through my studies and projects.</p></div>
+  <div class="skills-grid">
+    <div class="skill"><b>HTML & CSS</b><span>Web structure & styling</span></div>
+    <div class="skill"><b>JavaScript</b><span>Interactive web features</span></div>
+    <div class="skill"><b>PHP</b><span>Server-side development</span></div>
+    <div class="skill"><b>MySQL</b><span>Database management</span></div>
+    <div class="skill"><b>Python</b><span>Application development</span></div>
+    <div class="skill"><b>Vue.js</b><span>Frontend development</span></div>
+    <div class="skill"><b>Bootstrap</b><span>Responsive interfaces</span></div>
+    <div class="skill"><b>Figma</b><span>UI/UX & prototyping</span></div>
+  </div>
+</section>
+
+<section class="section" id="projects">
+  <div class="heading"><p class="eyebrow">PROJECTS</p><h2>Projects I've worked on</h2></div>
+  <div class="projects-grid">
+    <article class="project"><b class="num">01</b><div><span class="tag">PHP · MySQL · POS · HRMS</span><h3>Cinemo</h3><p>A combined cinema POS and HRMS project with movie management, sales operations, employee management, job applications, and database-driven features.</p><small>PHP · MySQL · HTML/CSS · JavaScript</small></div></article>
+    <article class="project"><b class="num">02</b><div><span class="tag">PHP · MySQL</span><h3>Employee Training & Skills Development System</h3><p>An employee portal and admin system for training programs, modules, quizzes, scores, certificates, and feedback.</p><small>PHP · MySQL · Bootstrap</small></div></article>
+    <article class="project"><b class="num">03</b><div><span class="tag">Python · PyQt6 · MySQL</span><h3>Vet Clinic Record System</h3><p>A desktop application for managing owners, pets, appointments, medical records, schedules, and treatment information.</p><small>Python · PyQt6 · MySQL</small></div></article>
+    <article class="project"><b class="num">04</b><div><span class="tag">PHP · Bootstrap</span><h3>AristoPets</h3><p>A pet-store website concept featuring product browsing, services, account pages, and shopping-cart functionality.</p><small>PHP · Bootstrap · JavaScript</small></div></article>
+  </div>
+</section>
+
+<section class="section light" id="education">
+  <div class="heading center"><p class="eyebrow">EDUCATION</p><h2>My academic journey</h2></div>
+  <div class="timeline"><span class="dot"></span><p class="date">CURRENT</p><h3>Information Technology</h3><h4>National College of Science and Technology</h4><p>Currently a 3rd-year Information Technology student, developing skills in programming, databases, web development, and system design.</p></div>
+</section>
+
+<section class="section contact" id="contact">
+  <div class="contact-box">
+    <div><p class="eyebrow">CONTACT</p><h2>Let's connect.</h2><p>If you'd like to know more about my projects, skills, or academic work, feel free to get in touch.</p></div>
+    <form id="contactForm">
+      <label>Name<input id="name" required placeholder="Your name"></label>
+      <label>Email<input id="email" type="email" required placeholder="your@email.com"></label>
+      <label>Message<textarea id="message" rows="5" required placeholder="Write your message..."></textarea></label>
+      <button class="btn primary" type="submit">Send Message</button>
+      <p id="formNote"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div><a class="logo" href="#home">RCL<span>.</span></a><p>© <span id="year"></span> Roiza Claire Lim. All rights reserved.</p><a href="#home">Back to top ↑</a></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
